@@ -2,6 +2,7 @@ FROM python:3.11-slim
 
 WORKDIR /app
 
+# bust cache
 COPY db/ ./db/
 COPY utils/ ./utils/
 COPY backend/ ./backend/
