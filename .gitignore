@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Database — seeded fresh on deploy
+db/fulcrumcare.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+
+# Claude Code
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Zone identifiers (WSL artifacts)
+*.Zone.Identifier
