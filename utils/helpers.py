@@ -1,6 +1,5 @@
 import os
 import sys
-import streamlit as st
 
 # Make sure root is on the path regardless of which page is running
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -95,9 +94,11 @@ thead tr th { background-color: #EBF8FF !important; }
 """
 
 def apply_css():
+    import streamlit as st
     st.markdown(PAGE_CSS, unsafe_allow_html=True)
 
 def brand_header(subtitle: str = ""):
+    import streamlit as st
     st.markdown(
         f"<span style='font-size:22px;font-weight:700;color:{FULCRUM_BLUE}'>🦷 FulcrumCare</span>"
         + (f"&nbsp;&nbsp;<span style='font-size:14px;color:#718096'>{subtitle}</span>" if subtitle else ""),
